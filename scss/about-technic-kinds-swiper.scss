@@ -1,0 +1,53 @@
+@charset "UTF-8";
+.about-technic-kinds-swiper .about-technic-kinds-swiper__wrapper {
+  padding: 20px 0 70px 5px;
+}
+
+.about-technic-kinds-swiper .about-technic-kinds-swiper__image {
+  background: #ffffff;
+  border-radius: 5px;
+  border: 1px solid #b3b1b1;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  padding: 0 16px 16px 16px;
+  width: 224px;
+  height: 160px;
+}
+
+@media only screen and (min-width: 768px) {
+  .about-technic-kinds-swiper__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about-technic-kinds-swiper__hidden-tablet {
+    display: none;
+  }
+
+  .about-technic-kinds-swiper__btn {
+    font-family: "TT Lakes", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #1B1C21;
+    margin-left: 5px;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .about-technic-kinds-swiper-show-all__btn-mod::after {
+    content: "Скрыть";
+  }
+
+  .about-technic-kinds-swiper__btn::after {
+    content: "Показать все";
+  }
+}
+.about-technic-kinds-swiper .about-technic-kinds-swiper__item {
+  display: flex;
+  align-self: flex-start;
+}

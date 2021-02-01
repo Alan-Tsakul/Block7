@@ -1,0 +1,141 @@
+@import 'variables.scss';
+
+
+.modal{
+&{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+     left: 0;
+      top: 0; 
+      right: 0;
+    overflow: auto;
+    z-index:20;
+}
+    &__dialog {
+        width: 320px;
+        position: absolute;
+        top:0;
+        bottom: 0;
+        right: 0;
+    }
+    &__content {
+        width:100%;
+        height: 100%;
+        padding: 24px 16px;
+        background-color: $bgColorSecond;
+    }
+    @media only screen and (min-width: 1120px) {
+        &__dialog {
+            width: 440px;
+        }
+        &__content{
+            padding: 32px;
+        }
+    }
+    &__title{
+        font-family: "TTLakes-Bold", sans-serif;
+        font-size: 24px;
+        color: $text-color;
+        position: relative;
+    }
+    &__title::before{
+        content: "";
+        background: #41F6D7;
+        height: 40px;
+        width: 4px;
+        position: absolute;
+        border-radius:0  30% 30% 0;
+        left: -16px;
+        top: -8px;
+    }
+    @media only screen and (min-width: 1120px) {
+        &__title::before{
+            left: -32px;
+        }
+    }
+    @media only screen and (min-width: 1120px) {
+        &__close-btn{
+            position: absolute;
+            left: -65px;
+            top: 50px;
+        }
+    }
+    &__name,
+    &__phone,
+    &__email,
+    &__text{
+        width: 100%;
+        border: 1px solid $border-input;
+        height: 48px;
+        border-radius: 5px;
+        margin-bottom: 16px;
+        outline: none;
+    }
+    &__name::placeholder,
+    &__phone::placeholder,
+    &__email::placeholder,
+    &__text::placeholder{
+        color: $input-text;
+        padding-left: 16px;
+    }
+    &__text{
+        height: 118px;
+        padding-bottom: 72px ;
+    }
+    &__info{
+        color: $light-color;
+        text-align: left;
+        font-size: 14px;
+        padding-right: 5px;
+    }
+    &__link{
+        text-decoration: none;
+        color: $button-color;
+    }
+    .card__btn-long {
+        width: 136px;
+        height: 32px;
+        background: $button-color;
+        border-radius: 20px;
+        position: relative;
+        left: 150px;
+        border: none;
+      }
+      @media only screen and (min-width: 1120px) {
+        .card__btn-long {
+            left: 240px;
+          }
+    }
+     .button-text {
+        color: $bgColorSecond;
+        font-weight: 700;
+        font-size: 12px;
+        text-transform: uppercase;
+        position: absolute;
+        bottom: 8px;
+        right: 40px;
+      }
+     .button-arrow {
+        width: 5px;
+        height: 5px;
+        border-top: 3px solid $bgColorSecond;
+        border-right: 3px solid $bgColorSecond;
+        position: absolute;
+        transform: rotate(45deg);
+        bottom: 14px;
+        right: 16px;
+      }
+      .hide {
+        display: none;
+    }
+    .show{
+        display: block;
+    }
+
+}
+
+
+

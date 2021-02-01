@@ -1,0 +1,37 @@
+@import 'variables.scss';
+
+.footer {
+    color: $light-color;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 14px;
+    justify-content: space-around;
+    flex-basis: 100%;
+    &__item {
+        text-align: center;
+        }
+}
+
+@media only screen and (min-width: 768px) {
+    .footer {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        &__item:nth-child(3) {
+            text-align:right;
+            flex-basis: 30%;
+            }
+            &__item:nth-child(1) {
+                text-align:left;
+                margin-left: 15px;
+                }
+                &__item:nth-child(2) {
+                    text-align:center;
+                    }
+    }
+}
+
+.footer-wrapper {
+    border-top: 3px solid $line-color;
+    margin-top: 15px;
+    padding: 15px;
+}
