@@ -1,0 +1,172 @@
+@charset "UTF-8";
+.about-prices-swiper__wrapper {
+  padding: 20px 0 50px 0;
+}
+.about-prices-swiper .card__btn-long {
+  width: 100px;
+  height: 27px;
+  background: #FF3E79;
+  border-radius: 20px;
+  position: absolute;
+  bottom: 20px;
+  right: 16px;
+}
+
+.about-prices-swiper-image {
+  background: #ffffff;
+  border-radius: 5px;
+  border: 1px solid #EAEAEA;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  width: 260px;
+  height: 220px;
+  padding: 0 0 16px 16px;
+  position: relative;
+}
+.about-prices-swiper-image__item {
+  display: flex;
+  flex-basis: 100%;
+  margin: 0;
+  padding: 0;
+}
+.about-prices-swiper-image__item:nth-child(1)::before {
+  content: "Ремонтные услуги";
+  position: absolute;
+  color: #7E7E82;
+  top: 20px;
+}
+.about-prices-swiper-image__item:nth-child(2)::before {
+  content: "Цена";
+  position: absolute;
+  color: #7E7E82;
+  top: 100px;
+}
+.about-prices-swiper-image__item:nth-child(3)::before {
+  content: "Срок";
+  position: absolute;
+  color: #7E7E82;
+  bottom: 50px;
+}
+
+.about-prices-swiper-list {
+  display: none;
+}
+
+.button-text {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 8px;
+  right: 40px;
+}
+
+.button-arrow {
+  width: 5px;
+  height: 5px;
+  border-top: 3px solid #ffffff;
+  border-right: 3px solid #ffffff;
+  position: absolute;
+  transform: rotate(45deg);
+  bottom: 12px;
+  right: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+  .about-prices-swiper__container {
+    display: flex;
+    justify-content: space-around;
+  }
+  .about-prices-swiper__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 50px 20px 40px;
+  }
+  .about-prices-swiper .card {
+    display: flex;
+    justify-content: space-around;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 1px;
+  }
+
+  .about-prices-swiper-image__item::before {
+    display: none;
+  }
+
+  .about-prices-swiper-list {
+    font-family: "TT Lakes", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #7E7E82;
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 100%;
+    margin: 0 0 20px 20px;
+  }
+  .about-prices-swiper-list__item:nth-child(1) {
+    flex-grow: 1;
+  }
+  .about-prices-swiper-list__item:nth-child(2) {
+    flex-basis: 14%;
+  }
+  .about-prices-swiper-list__item:nth-child(3) {
+    flex-basis: 32%;
+  }
+
+  .about-prices-swiper-image {
+    height: 75px;
+    min-width: 700px;
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: nowrap;
+    border: none;
+  }
+  .about-prices-swiper-image__item {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+  .about-prices-swiper-image__item:nth-child(2) {
+    flex-basis: 25%;
+  }
+  .about-prices-swiper-image__item:nth-child(3) {
+    flex-basis: 60%;
+  }
+}
+.about-prices-swiper-get {
+  color: #1B1C21;
+  margin-left: 20px;
+  max-width: 480px;
+}
+.about-prices-swiper-get__link {
+  font-family: "TT Lakes", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  text-decoration: none;
+  color: #1B1C21;
+  position: relative;
+}
+.about-prices-swiper-get__button-arrow {
+  width: 8px;
+  height: 8px;
+  transform: rotate(45deg);
+  border-top: 3px solid #FF3E79;
+  border-right: 3px solid #FF3E79;
+  position: absolute;
+  margin-left: 5px;
+  margin-top: 8px;
+}
+
+@media only screen and (min-width: 768px) {
+  .about-prices-swiper-get {
+    margin-left: 30px;
+  }
+}
+@media only screen and (min-width: 1120px) {
+  .about-prices-swiper-image {
+    min-width: 1035px;
+  }
+}

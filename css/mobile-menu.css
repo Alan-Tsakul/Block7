@@ -1,0 +1,237 @@
+@font-face {
+  font-family: "TTLakes";
+  src: url("../fonts/TTLakes-Regular.ttf");
+}
+@font-face {
+  font-family: "TTLakes-Bold";
+  src: url("../fonts/TTLakes-Bold.ttf");
+}
+@font-face {
+  font-family: "TTLakes-Light";
+  src: url("..//fonts/TTLakes-Light.ttf");
+}
+@media only screen and (min-width: 768px) {
+  .blur {
+    filter: blur(50px);
+  }
+
+  .overlay {
+    filter: blur(50px);
+  }
+}
+.menu-overlay {
+  visibility: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.mobile-menu {
+  overflow: hidden;
+  width: 320px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+}
+
+.mobile-menu__content {
+  width: 100%;
+  height: 100%;
+  padding: 23px 24px 35px 24px;
+  background-color: #ffffff;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-menu {
+    width: 360px;
+  }
+}
+@media only screen and (min-width: 1480px) {
+  .mobile-menu {
+    display: block;
+    position: absolute;
+    height: 2100px;
+    visibility: visible;
+    left: auto;
+    top: auto;
+    bottom: auto;
+  }
+
+  .blur-container {
+    width: 1120px;
+    margin-left: 360px;
+  }
+
+  .menu-overlay {
+    position: static;
+  }
+}
+.mobile-menu-active {
+  display: block;
+  position: fixed;
+  transform: translateX(0%);
+  transition: 1s;
+  box-shadow: 50px 10px 15px #b8b7b7;
+  z-index: 20;
+}
+
+.mobile-menu-close {
+  display: block;
+  transform: translateX(-100%);
+  position: fixed;
+  transition: 1s;
+  z-index: 20;
+}
+
+@media only screen and (min-width: 1480px) {
+  .mobile-menu-close {
+    transform: translateX(0%);
+  }
+}
+.mobile-menu__header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.primary-btn-close {
+  background-image: url("../img/svg/close.svg");
+}
+
+.group-logo-menu {
+  transform: translateX(-30px);
+}
+
+@media only screen and (min-width: 1120px) {
+  .mobile-menu__close-btn {
+    display: none;
+  }
+
+  .group-logo-menu {
+    transform: translateX(-60px);
+  }
+}
+.primary-btn-search-info {
+  background-image: url("../img/svg/search-info.svg");
+}
+
+.main-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90vh;
+  min-height: 650px;
+}
+
+.nav-menu-list {
+  font-family: "TTLakes", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 60%;
+  margin-top: 50px;
+}
+
+.nav-menu-list__link {
+  text-decoration: none;
+  color: #1B1C21;
+  position: relative;
+}
+
+.nav-menu-list__item {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  justify-content: space-between;
+}
+
+.nav-menu-list__link:hover:before {
+  content: "";
+  background: #41F6D7;
+  height: 32px;
+  width: 4px;
+  position: absolute;
+  border-radius: 0 30% 30% 0;
+  left: -25px;
+  bottom: -5px;
+}
+
+.nav-menu-list__link:hover {
+  opacity: 70%;
+}
+
+.contacts-info__button-list {
+  margin-left: -16px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.contacts-info__tablet-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.tablet-list__item {
+  margin-left: 16px;
+}
+
+.contacts-info {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 30%;
+  justify-content: space-around;
+}
+
+.contacts__email {
+  font-family: "TTLakes", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 15%;
+}
+
+.contacts__link {
+  text-decoration: none;
+  color: #1B1C21;
+}
+
+.contacts__phone {
+  display: flex;
+  font-family: "TTLakes-Bold", sans-serif;
+  font-size: 24px;
+}
+
+.languages {
+  display: flex;
+  flex-basis: 80%;
+}
+
+.languages__btn {
+  font-family: "TTLakes", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  border: none;
+  background: none;
+  padding-left: 0;
+  outline: none;
+}
+
+.languages__btn:hover {
+  opacity: 70%;
+  transform: scale(1.3);
+}
